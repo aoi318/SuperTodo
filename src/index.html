@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ULTIMATE TODO DELUXE</title>
+        <link rel="stylesheet" href="assets/style.css" />
+    </head>
+    <body>
+        <header class="app-header">
+            <h1>ULTIMATE TODO DELUXE</h1>
+            <p>(※動きません)</p>
+        </header>
+        <main class="app-container">
+            <aside class="dashboard-sidebar">
+                <h2>意味ありげなデータログ (※意味ないです)</h2>
+                <p>株価風データ:<span id="stock-data-value"></span></p>
+                <p>為替風データ:<span id="currency-data-value"></span></p>
+            </aside>
+            <section class="todo-main">
+                <h2>タスク入力:量子保存モード</h2>
+                <p>(※動きません)</p>
+                <div class="input-area">
+                    <input type="text" id="task-input" placeholder="使命を入力..." />
+                    <button id="add-task-btn">量子保存シーケンス開始</button>
+                </div>
+                <h3>格納済みタスク</h3>
+                <ul id="task-list"></ul>
+                <hr />
+                <button id="refresh-data-btn" class="warning-btn">
+                    データ整合性チェック(危険)
+                </button>
+            </section>
+        </main>
+        <div id="error-bar" style="display: none">エラー: <span id="error-message"></span></div>
+        <script src="js/todo-app.js"></script>
+    </body>
+</html>
