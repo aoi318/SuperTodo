@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/js/*.js",
+    "lint": "eslint src/*.ts",
     "format": "prettier --write src/",
     "test": "jest",
     "predeploy": "npm run format && npm run lint && npm run test && tsc"
